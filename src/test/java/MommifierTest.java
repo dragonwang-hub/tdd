@@ -34,4 +34,18 @@ public class MommifierTest {
         //Then
         assertEquals(the_vowels_number_less_than_30per_of_string,result);
     }
+
+
+    @Test
+    void should_return_itself_when_input_string_is_the_vowels_number_more_than_30per_but_not_have_continuous_set_of_vowels() {
+        //Given
+        Mommifier mommifier =new Mommifier();
+        String string_is_the_vowels_number_more_than_30per_but_not_have_continuous_set_of_vowels="return";
+        //When
+        String result = mommifier.convert(string_is_the_vowels_number_more_than_30per_but_not_have_continuous_set_of_vowels);
+        //Then
+        assertEquals(string_is_the_vowels_number_more_than_30per_but_not_have_continuous_set_of_vowels,result);
+    }
+
+
 }
