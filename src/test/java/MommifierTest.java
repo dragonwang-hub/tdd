@@ -57,4 +57,14 @@ public class MommifierTest {
         assertEquals("kemommyep",result);
     }
 
+    @Test
+    void should_return_insert_multiple_times_mommy_when_input_string_is_the_vowels_number_more_than_30per_and_have_many_continuous_set_of_vowels() {
+        //Given
+        Mommifier mommifier =new Mommifier();
+        String string_is_the_vowels_number_more_than_30per_and_have_many_continuous_set_of_vowels="eeeee";
+        //When
+        String result = mommifier.convert(string_is_the_vowels_number_more_than_30per_and_have_many_continuous_set_of_vowels);
+        //Then
+        assertEquals("emommyemommyemommyemommye",result);
+    }
 }
