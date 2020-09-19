@@ -23,4 +23,15 @@ public class MommifierTest {
         //Then
         assertEquals(empty_string, result);
     }
+
+    @Test
+    void should_return_itself_when_input_string_is_the_vowels_number_less_than_30per() {
+        //Given
+        Mommifier mommifier =new Mommifier();
+        String the_vowels_number_less_than_30per_of_string="string";
+        //When
+        String result = mommifier.convert(the_vowels_number_less_than_30per_of_string);
+        //Then
+        assertEquals(the_vowels_number_less_than_30per_of_string,result);
+    }
 }
